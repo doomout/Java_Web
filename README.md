@@ -100,7 +100,7 @@ public class SampleServlet extends HttpServlet {
    * addCookie() : 응답 시에 쿠기 추가
    * sendRedirect() : 브라우저에 이동을 지시  
    
-3. Todo 웹 어플리케이션 구조
+5. Todo 웹 어플리케이션 구조
    * 목록(GET) : 조회 화면, 등록/수정/삭제 후에도 결과 확인 화면
    * 등록(GET) : 등록을 위해서는 GET 방식으로 이동하기에 등록 화면도 작성
    * 등록(POST) : 등록 화면에서 입력한 내용들은 POST 방식으로 전송된다.
@@ -109,3 +109,9 @@ public class SampleServlet extends HttpServlet {
    * 수정/삭제(GET) : 조회 화면에서 수정/삭제를 선택했을 때 GET 방식으로 이동한다.
    * 수정 (POST) : 수정은 POST 방식으로 전송하고 컨트롤러에서 수정 뒤 목록 화면으로 이동한다.
    * 삭제 (POST) : 삭제도 POST 방식으로 전송하고 컨트롤러에서 삭제 후 목록 화면으로 이동한다.
+
+6. 모델(Model)
+   * DTO : 계층이나 객체들 간의 데이터 교환을 뜻함
+   * 생성자가 없가나 반드시 파라미터가 없는 생성자 함수를 가지는 형태
+   * 속성은 private 로 작성
+   * getter/setter 를 제공할 것
